@@ -12,7 +12,7 @@
 
         <hr>
 
-        <a href="{{ route('admin.category.create') }}" class="btn btn-primary">
+        <a href="{{ route('admin.article.create') }}" class="btn btn-primary">
             <i class="fa fa-plus-square"></i>
             Создать новость
         </a>

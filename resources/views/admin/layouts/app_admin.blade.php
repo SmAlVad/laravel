@@ -82,5 +82,8 @@
         @yield('content')
     </main>
 </div>
+
+<!-- Scripts -->
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
 </body>
 </html>
