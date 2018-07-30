@@ -23,6 +23,36 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $url_data = [
+            [
+                'title' => 'laravel',
+                'url' => 'https://google.com'
+            ],
+            [
+                'title' => 'YuoTube',
+                'url' => 'http://youtube.com'
+            ]
+        ];
+
+        $url_data = json_encode($url_data);
+
+        return view('home', [
+            'url_data' => $url_data,
+        ]);
+    }
+
+    public function getJson()
+    {
+        return [
+            [
+                'title' => 'AJAX',
+                'url' => 'https://google.com'
+            ],
+            [
+                'title' => 'JavaScript',
+                'url' => 'http://youtube.com'
+            ]
+        ];
     }
 }

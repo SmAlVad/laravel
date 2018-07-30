@@ -18,6 +18,13 @@
                 </div>
             </div>
         </div>
+        {{--<div class="col-md-8">--}}
+            {{--<prop-component :urldata="{{ $url_data }}"></prop-component>--}}
+        {{--</div>--}}
+
+        <div class="col-md-8">
+            <ajax-component></ajax-component>
+        </div>
     </div>
 </div>
 @endsection
