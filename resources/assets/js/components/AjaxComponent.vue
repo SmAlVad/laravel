@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="update" class="btn btn-primary tex mb-1" v-if="!is_refresh"> Обновить- {{ id }} </button>
+        <button @click="update" class="btn btn-primary tex mb-1" v-if="!is_refresh"> Запросить - {{ id }} </button>
         <span class="badge badge-primary mb-1" v-if="is_refresh">Обновление ...</span>
         <table class="table">
             <thead>
@@ -33,9 +33,7 @@
         },
         methods: {
             update: function () {
-
                 this.is_refresh  = true;
-
                 axios.get('/home/get-json').then((response) => {
 
                     this.urldata = response.data;

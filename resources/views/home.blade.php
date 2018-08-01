@@ -25,6 +25,10 @@
         <div class="col-md-8">
             <ajax-component></ajax-component>
         </div>
+
+        <div class="col-md-8">
+            <chartline-component></chartline-component>
+        </div>
     </div>
 </div>
 @endsection
